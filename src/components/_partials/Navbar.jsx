@@ -30,7 +30,7 @@ function Navbar() {
 
 
                 <li className="nav-item dropdown no-arrow d-sm-none">
-                    <Link className="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                    <Link className="nav-link dropdown-toggle" to="#" id="searchDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i className="fas fa-search fa-fw"></i>
                     </Link>
@@ -54,7 +54,7 @@ function Navbar() {
 
 
                 <li className="nav-item dropdown no-arrow mx-1">
-                    <Link className="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                    <Link className="nav-link dropdown-toggle" to="#" id="alertsDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i className="fas fa-bell fa-fw"></i>
 
@@ -101,7 +101,7 @@ function Navbar() {
                 </li>
 
                 <li className="nav-item dropdown no-arrow mx-1">
-                    <Link className="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                    <Link className="nav-link dropdown-toggle" to="#" id="messagesDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i className="fas fa-envelope fa-fw"></i>
                         <span className="badge badge-danger badge-counter">7</span>
@@ -158,7 +158,7 @@ function Navbar() {
                                 <div className="small text-gray-500">Chicken the Dog · 2w</div>
                             </div>
                         </Link>
-                        <a className="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                        <Link className="dropdown-item text-center small text-gray-500" to="#">Read More Messages</Link>
                     </div>
                 </li>
 
@@ -169,7 +169,7 @@ function Navbar() {
                     <Link className="nav-link dropdown-toggle" to="#" id="userDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span className="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                        <img className="img-profile rounded-circle"
+                        <img className="img-profile rounded-circle" alt=""
                             src="img/undraw_profile.svg" />
                     </Link>
 

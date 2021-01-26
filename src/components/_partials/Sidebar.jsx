@@ -28,7 +28,7 @@ function Sidebar() {
 
                 <div className="sidebar-heading">
                     Interface
-</div>
+                </div>
 
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -67,7 +67,7 @@ function Sidebar() {
 
                 <div className="sidebar-heading">
                     Addons
-</div>
+                </div>
 
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="#" data-toggle="collapse" data-target="#collapsePages"
@@ -100,8 +100,6 @@ function Sidebar() {
                         <i className="fas fa-fw fa-table"></i>
                         <span>Tables</span></Link>
                 </li>
-
-
 
                 <div className="text-center d-none d-md-inline">
                     <button className="rounded-circle border-0" id="sidebarToggle"></button>
