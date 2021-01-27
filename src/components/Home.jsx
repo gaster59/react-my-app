@@ -9,6 +9,7 @@ import {
 import Example from "./Example";
 import Dashboard from "./Dashboard";
 import Dynamic from "./Dynamic";
+import Fetch from "./Fetch";
 
 function Home() {
     return (
@@ -27,6 +28,7 @@ function Home() {
                 <Route exact path="/" component={Example} />
                 <Route path="/dashboard" component={Dashboard} />
                 <Route path="/dynamic" component={Dynamic} />
+                <Route path="/fetch" component={Fetch} />
             </Switch>
         </BrowserRouter>
     );
