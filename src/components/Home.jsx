@@ -3,13 +3,18 @@ import React from "react";
 import {
     BrowserRouter,
     Switch,
-    Route
+    Route,
+    Redirect
 } from "react-router-dom";
 
 import Example from "./Example";
 import Dashboard from "./Dashboard";
 import Dynamic from "./Dynamic";
 import Fetch from "./Fetch";
+import Login from "./Login";
+import Logout from "./Logout";
+
+import Cookies from "js-cookie";
 
 function Home() {
     return (
@@ -26,9 +31,14 @@ function Home() {
             </nav> */}
             <Switch>
                 <Route exact path="/" component={Example} />
-                <Route path="/dashboard" component={Dashboard} />
+                {/* <Route path="/dashboard" component={Dashboard} /> */}
+                <Route path="/dashboard">
+                    {!Cookies.get('login') ? <Redirect to="/login" /> : <Dashboard />}
+                </Route>
                 <Route path="/dynamic" component={Dynamic} />
                 <Route path="/fetch" component={Fetch} />
+                <Route path="/login" component={Login} />
+                <Route path="/logout" component={Logout} />
             </Switch>
         </BrowserRouter>
     );

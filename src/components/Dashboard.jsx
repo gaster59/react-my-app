@@ -1,10 +1,19 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useForm } from "react-hook-form"
 
 import Sidebar from "./_partials/Sidebar";
 import Navbar from "./_partials/Navbar";
 
 function Dashboard() {
+
+    useEffect(() => {
+        // event render
+    
+    
+        // event enmount
+        // return () => console.log('unmount');
+    
+      },);
 
     const { register, handleSubmit, errors } = useForm();
     const onSubmitForm = data => {

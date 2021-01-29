@@ -177,21 +177,21 @@ function Navbar() {
                         aria-labelledby="userDropdown">
                         <Link className="dropdown-item" to="#">
                             <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Profile
-                                    </Link>
+                            Profile
+                        </Link>
                         <Link className="dropdown-item" to="#">
                             <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Settings
-                                    </Link>
+                            Settings
+                        </Link>
                         <Link className="dropdown-item" to="#">
                             <i className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Activity Log
-                                    </Link>
+                            Activity Log
+                        </Link>
                         <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item" to="#" data-toggle="modal" data-target="#logoutModal">
+                        <Link className="dropdown-item" to="/logout" data-toggle="modal" data-target="#logoutModal">
                             <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Logout
-                                    </Link>
+                            Logout
+                        </Link>
                     </div>
                 </li>
             </ul>
