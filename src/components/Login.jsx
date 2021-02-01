@@ -31,6 +31,7 @@ function Login(props) {
                     setMessage('error');
                 } else {
                     Cookies.set('login', result.token);
+                    console.log(props.history);
                     props.history.push("/dashboard");
                 }
             });

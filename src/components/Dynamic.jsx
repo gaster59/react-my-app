@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
 
 import Sidebar from "./_partials/Sidebar";
 import Navbar from "./_partials/Navbar";
